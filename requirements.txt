@@ -1,0 +1,9 @@
+jupyter[notebook]
+numpy 
+pandas 
+matplotlib 
+scikit-learn 
+keras 
+tensorflow 
+h5py 
+pillow
