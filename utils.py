@@ -11,6 +11,8 @@ def clean_dataframe(df):
 	}
 	df.rename(columns=rename_columns, inplace=True)
 	df = df.drop(df[(df['edad_a'].isnull()) | (df['edad_b'].isnull())].index)
+	df = df.drop(df[(df['edad_a'] <= 18) | (df['edad_b'] <= 18)].index)
+	df = df.drop(df[(df['altura_a'] <= 100) | (df['altura_b'] <= 100)].index)
 	df = df.drop(df[(df['altura_a'].isnull()) | (df['altura_b'].isnull())].index)
 	df = df.drop(["alcance_mano_a", "alcance_mano_b"], axis=1)
 	df = df.drop(["decision", "juez1_a", "juez1_b", "juez2_a", "juez2_b", "juez3_a", "juez3_b"], axis=1)
