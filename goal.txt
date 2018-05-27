@@ -1,1 +1,0 @@
-Queremos predecir a partir de ciertos datos si el boxeador va a ganar o no.
